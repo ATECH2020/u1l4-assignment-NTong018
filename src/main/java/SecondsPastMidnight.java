@@ -3,14 +3,19 @@ import java.util.Scanner;
 class SecondsPastMidnight {
     public static void main(String[] args) {
 
-        //Creates a new scanner for user input
+        //creates a new scanner for user input
         Scanner scanner = new Scanner(System.in);
 
-        //Reads int from user
+        //reads int from user
         int number = scanner.nextInt();
 
-        //Your code goes here
+        //calculates hours and minutes from seconds
+        int hours = number / 3600;
+        int minutes = number / 60;
 
+        //prints output
+        System.out.println();
+        System.out.println(hours + " " + minutes);
 
         // closing the scanner object
         scanner.close();
