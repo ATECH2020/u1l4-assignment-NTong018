@@ -18,8 +18,7 @@ class StudentDesks {
 
         //calculates and prints output
         double allDesks = desks1 + desks2 + desks3;
-        System.out.println();
-        System.out.println((int)allDesks);
+        System.out.print((int)allDesks);
 
         // closing the scanner object
         scanner.close();

@@ -13,8 +13,7 @@ class AnalogClock {
         int degreesMinute = (degreesHour % 30) * 12;
 
         //prints output
-        System.out.println();
-        System.out.println(degreesMinute);
+        System.out.print(degreesMinute);
 
         // closing the scanner object
         scanner.close();

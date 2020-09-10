@@ -21,8 +21,7 @@ class Timestamps {
         
         //calculates and prints output
         int outputSecs = diffHours + diffMins + diffSecs;
-        System.out.println();
-        System.out.println(outputSecs);
+        System.out.print(outputSecs);
 
         //closing the scanner object
         scanner.close();
