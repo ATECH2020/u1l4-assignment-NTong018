@@ -3,15 +3,17 @@ import java.util.Scanner;
 class AnalogClock {
     public static void main(String[] args) {
 
-        //Creates a new scanner for user input
+        //creates a new scanner for user input
         Scanner scanner = new Scanner(System.in);
 
-        //Reads ints from user
+        //reads ints from user
+        int degreesHour = scanner.nextInt() % 360;
 
+        //calculates degrees of minute hand
+        int degreesMinute = (degreesHour % 30) * 12;
 
-        /*
-         *  your code goes here
-         */
+        //prints output
+        System.out.print(degreesMinute);
 
         // closing the scanner object
         scanner.close();

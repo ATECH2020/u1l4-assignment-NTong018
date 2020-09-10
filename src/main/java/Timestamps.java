@@ -3,10 +3,10 @@ import java.util.Scanner;
 class Timestamps {
     public static void main(String[] args) {
 
-        //Creates a new scanner for user input
+        //creates a new scanner for user input
         Scanner scanner = new Scanner(System.in);
 
-        //Reads ints from user
+        //reads ints from user
         int hours1 = scanner.nextInt();
         int minutes1 = scanner.nextInt();
         int seconds1 = scanner.nextInt();
@@ -14,13 +14,16 @@ class Timestamps {
         int minutes2 = scanner.nextInt();
         int seconds2 = scanner.nextInt();
 
+        //calculates difference in seconds
+        int diffHours = (hours2 - hours1) * 3600;
+        int diffMins = (minutes2 - minutes1) * 60;
+        int diffSecs = (seconds2 - seconds1);
+        
+        //calculates and prints output
+        int outputSecs = diffHours + diffMins + diffSecs;
+        System.out.print(outputSecs);
 
-        /*
-         *  your code goes here
-         */
-
-
-        // closing the scanner object
+        //closing the scanner object
         scanner.close();
     }
 }
